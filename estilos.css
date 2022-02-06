@@ -1,0 +1,108 @@
+body {
+    margin: 1em;
+    font-family: "Noto Sans", sans-serif;
+    background-color: antiquewhite;
+background-image: linear-gradient( antiquewhite, orange);
+}
+
+/*header*/
+/*.navbar{
+    opacity: 0.5;
+}
+header {
+    position: fixed;
+    top: 0;
+    height: 85px;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: antiquewhite;
+    font-size: 20px;
+    color: #FFFFFF;
+}*/
+.cover {
+    margin-top: 3px;
+    width: auto;
+    height: 200px;
+    background-image: url(https://cdn.glitch.com/18f92a98-e3a5-438b-81c8-7e5247e80524%2Frsz_david-becker-h1y4jjow-l0-unsplash.jpg?v=1629474265025);
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+.cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+/*Termina header*/
+/*Carrusel*/
+.container {
+    margin-top: 3rem;
+}
+
+/*Termina carrusel*/
+
+/*Comienza aqui*/
+.correr {
+    display: flex;
+    padding-left: 30px;
+    margin-left: 300px;
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 100%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*Termina comienza aqui*/
+/*Empieza servicios*/
+.cover-small {
+    height: 200px;
+    background-blend-mode: normal;
+}
+
+.card {
+    background-color: darkgray;
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    min-height: 3rem;
+}
+
+.card-text {
+    min-height: 10rem;
+}
+
+/*Teermina servicios*/
+
+/*Formulario*/
+.form-control {
+    box-shadow: 0 0 0 0.25rem darkgray;
+}
+
+.mapa {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mapa.texto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
